@@ -28,7 +28,7 @@ const SinglePostPage = () => {
             <h2>{post.title}</h2>
             <p>{post.body}</p>
             <p className="postCredit">
-                <Link to={`/post/edit/${post.id}`}>Edit Post</Link>
+                <Link to={`/redux-exercise-4/post/edit/${post.id}`}>Edit Post</Link>
                 <PostAuthor userId={post.userId} />
                 <TimeAgo timestamp={post.date} />
             </p>
