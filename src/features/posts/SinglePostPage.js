@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectPostsById } from './postsSlice';
+import { selectPostById } from './postsSlice';
 
 import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
@@ -13,7 +13,7 @@ const SinglePostPage = () => {
 
     // retrieve postId
 
-    const post = useSelector((state) => selectPostsById(state, Number(postId)));
+    const post = useSelector((state) => selectPostById(state, Number(postId)));
 
     if (!post) {
         return (
